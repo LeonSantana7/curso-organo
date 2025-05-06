@@ -4,7 +4,8 @@ import { RodapeComponent } from "./componentes/rodape/rodape.component";
 
 @Component({
   selector: 'app-root',
-  imports: [CabecalhoComponent, RodapeComponent],
+  imports: [CabecalhoComponent,
+             RodapeComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
