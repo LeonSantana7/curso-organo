@@ -8,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class LivroComponent {
 
+  livro = {
+    titulo: "As ondas",
+    autoria: "Virginia Woolf"
+  }
 }
