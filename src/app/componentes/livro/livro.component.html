@@ -1,12 +1,20 @@
 <section>
   <div class="info-livro">
-    <div class="card" style="width: 18rem;">
-      <img src="https://jornalismorio.espm.br/wp-content/uploads/2024/03/e-nao-sobrou-nenhum-removebg-preview-408x394.png" class="card-img-top w-100" alt="foto">
+    <div class="card position-relative" style="width: 18rem;">
+      <!-- Imagem -->
+      <img [src]="livro.imagem" class="card-img-top w-100" [alt]="livro.titulo">
+
+      <!-- Conteúdo -->
       <div class="card-body">
         <h5 class="card-title fw-bold fs-3">{{livro.titulo}}</h5>
         <p class="card-text fs-6">{{livro.autoria}}</p>
+        <button (click)="alternarFavorito()">
+          <span>
+            <i [ngClass]="favorito ? 'bi bi-heart-fill' : 'bi bi-heart'" class="fs-4"></i>
+          </span>
+        </button>
       </div>
-      <a href="#" class="btn btn-primary">LEIA</a>
+      <a href="https://www.amazon.com.br/ondas-Capa-Dura-Virginia-Woolf/dp/6559280047" class="btn btn-primary" target="_blank">Comprar</a>
     </div>
   </div>
 </section>
